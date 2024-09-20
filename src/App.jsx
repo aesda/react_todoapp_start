@@ -29,7 +29,7 @@ useEffect(() => {
     <div className="bg-white w-1/4 rounded-md p-4">
       <h2 className="text-2xl font-bold text-center m-b4">To Do App</h2>
       <div className="flex flex-col">
-        <ToDoForm />
+        <ToDoForm  toDos={toDos} setToDos={setToDos}/> 
         {
           toDos.map(todo => (
             <ToDoRow key={todo.id} todo={todo} />
